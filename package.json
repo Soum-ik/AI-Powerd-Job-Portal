@@ -2,16 +2,16 @@
   "name": "job-search",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "prisma generate && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seed": "node script/seed.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.13.0",
-    "@prisma/client": "^5.13.0",
+    "@prisma/client": "^6.6.0",
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-select": "^2.0.0",
@@ -27,13 +27,13 @@
     "next": "14.2.3",
     "nextjs-toploader": "^1.6.12",
     "nodemailer": "^6.9.13",
+    "prisma": "^6.6.0",
     "react": "^18",
     "react-dom": "^18",
     "react-draft-wysiwyg": "^1.15.0",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^5.2.1",
     "react-markdown": "^9.0.1",
- 
     "sharp": "^0.33.3",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
@@ -44,12 +44,12 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/react-draft-wysiwyg": "^1.13.8",
+    "@types/webidl-conversions": "^7.0.3",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",
     "prettier": "^3.3.0",
     "prettier-plugin-tailwindcss": "^0.6.1",
-    "prisma": "^5.13.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }

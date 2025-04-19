@@ -8,6 +8,8 @@ import { GiBanknote } from "react-icons/gi";
 import { formatMoney, relativeDate } from "@/lib/utils";
 
 function JobList({ job }) {
+  console.log(job.createdAt, "checking job createdAt");
+  
   return (
     <article className="flex gap-3 rounded-lg border p-5  transition-all duration-300 hover:bg-muted/60 ">
       <Image

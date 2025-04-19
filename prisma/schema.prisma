@@ -21,8 +21,8 @@ model Job {
   applicationUrl   String?
   companyLogoUrl   String?
   approved         Boolean  @default(false)
-  createdAt        DateTime @default(now())
-  updatedAt        DateTime @updatedAt
+  createdAt        DateTime? @default(now())
+  updatedAt        DateTime? @updatedAt
   User             User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId           String?  @db.ObjectId
 
